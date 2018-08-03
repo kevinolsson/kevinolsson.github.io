@@ -1,0 +1,95 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 72px) 48px repeat(3, 72px) 156px;
+  grid-auto-rows: 72px;
+  grid-gap: 12px;
+  grid-auto-flow: dense;
+
+  // display: grid;
+  // // grid-template-columns: repeat(auto-fill, minmax(76px, 1fr) minmax(76px, 1fr)); // 2 so we always have even number of columns 
+  // grid-template-rows: 64px;
+  // grid-auto-rows: 64px;
+  // max-width: 1024px;
+  // margin: 12px auto;
+  // grid-gap: 12px;
+  // grid-auto-flow: dense;
+  max-width: 1128px; // 1104 + 12 + 12
+  width: 100%;
+  margin: 0 auto 72px;
+  padding: 12px;
+  //transition: all 0.2s ease-out;
+
+  &--game {
+    grid-template-rows: 1fr;
+  }
+
+  &--sticky {
+    margin: 48px auto 72px;
+  }
+
+  &--no-slider {
+    grid-template-rows: 72px !important;
+    grid-auto-rows: 72px;
+  }
+
+  @media screen and (max-width: 459px) {
+    grid-template-columns: repeat(4, 1fr); // 2 so we always have even number of columns
+  }
+  @media screen and (max-width: 719px) and (min-width: 460px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media screen and (max-width: 859px) and (min-width: 720px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media screen and (max-width: 1023px) and (min-width: 860px) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &--has-sidebar {
+
+    @media screen and (max-width: 834px) {
+      grid-template-columns: repeat(4, 1fr); // 2 so we always have even number of columns
+    }
+    @media screen and (max-width: 1094px) and (min-width: 835px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media screen and (max-width: 1234px) and (min-width: 1095px) {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    @media screen and (max-width: 1398px) and (min-width: 1235px) {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    @media screen and (min-width: 1399px) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+  }
+
+  // &--has-sidebar {
+    //   @media screen and (max-width: 1023px) and (min-width: 860px) {
+      //     grid-template-columns: repeat(4, 1fr);
+      //     max-width: 536px;
+      //   }
+      //   @media screen and (max-width: 1299px) and (min-width: 1024px) {
+        //     grid-template-columns: repeat(6, 1fr);
+        //     max-width: 676px;
+        //   }
+        //   @media screen and (max-width: 1570px) and (min-width: 1300px) {
+          //     grid-template-columns: repeat(8, 1fr);
+          //     max-width: 816px;
+          //   }
+          //   @media screen and (max-width: 1853px) and (min-width: 1571px) {
+            //     grid-template-columns: repeat(10, 1fr);
+            //     max-width: 964px;
+            //   }
+            //   @media screen and (min-width: 1854px) {
+              //     grid-template-columns: repeat(12, 1fr);
+              //   }
+              // }
+
+
+            }

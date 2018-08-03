@@ -1,0 +1,27 @@
+.pill {
+  background-color: $styleGuideGrey-2;
+  border-radius: 100px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 4px 0px 12px;
+  margin: 14px 0px;
+  display: none;
+  @media screen and (min-width: 767px) { 
+    display: block;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  
+  &__icon {
+    background-color: $styleGuideGrey-1;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    margin: 2px 0px 2px 12px;
+    display: inline-block;
+    float: right;
+  }
+
+}

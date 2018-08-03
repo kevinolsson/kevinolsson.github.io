@@ -1,0 +1,1 @@
+"use strict";function toggleGlobal(){document.getElementById("global").classList.toggle("global--has-global")}function openSupport(){window.open("support.html")}var globalButton=document.getElementById("globalButton"),globalButton2=document.getElementById("globalButton2");globalButton.addEventListener("click",toggleGlobal),globalButton2.addEventListener("click",toggleGlobal);

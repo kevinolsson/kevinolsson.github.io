@@ -1,0 +1,113 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+
+  &__circle {
+    background-color: rgba(#FFF,0.3);
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    text-align: center;
+    .icon {
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 16px;
+    }
+  }
+
+  &--menu {
+    background-image: url(../images/icons/bars.svg)
+  }
+
+  &--search-line {
+    background-image: url(../images/icons/search-line.svg);
+  }
+
+  &--dots {
+    background-image: url(../images/icons/dots.svg);
+  }
+
+  &--heart-fill {
+    background-image: url(../images/icons/heart-fill.svg);
+  }
+
+  &--arrow-left {
+    background-image: url(../images/icons/arrow-left.svg);
+  }
+
+  &--arrow-right {
+    background-image: url(../images/icons/arrow-right.svg);
+  }
+
+  &--identity {
+   background-image: url(../images/icons/identity.svg); 
+  }
+
+  &--notifications {
+   background-image: url(../images/icons/notifications.svg); 
+  }
+
+  &--offers {
+   background-image: url(../images/icons/offers.svg); 
+  }  
+
+  &--responsible-gaming {
+   background-image: url(../images/icons/responsible-gaming.svg); 
+  }
+
+  &--settings {
+   background-image: url(../images/icons/settings.svg); 
+  }
+
+  &--transactions {
+   background-image: url(../images/icons/transactions.svg); 
+  }
+
+  &--withdrawals {
+   background-image: url(../images/icons/withdrawals.svg); 
+  }
+
+  &--trophy {
+    background-image: url(../images/icons/trophy-line.svg);
+  }
+
+  &--cards {
+    background-image: url(../images/icons/cards-line.svg);
+  }
+
+  &--dealer {
+    background-image: url(../images/icons/dealer-line.svg);
+  }
+
+  &--dices {
+    background-image: url(../images/icons/dices-line.svg);
+  }
+
+  &--support {
+    background-image: url(../images/icons/support-line.svg);
+  }
+
+  &--support-white {
+    background-image: url(../images/icons/support-line-white.svg);
+  }  
+
+  &--diamond {
+    background-image: url(../images/icons/diamond-line.svg);
+  }
+
+  &--shop {
+    background-image: url(../images/icons/shop.svg);
+  }
+
+  &--close {
+    background-image: url(../images/icons/close-line.svg);
+  }
+
+  &--fullscreen {
+    background-image: url(../images/icons/fullscreen.svg);
+  }
+}

@@ -1,0 +1,16 @@
+.menu-item {
+  text-align: center;
+
+  img {
+    display: block;
+    padding-top: 6px;
+    margin: 0px 16px;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    transform: translateY(-24px);
+  }
+}

@@ -1,0 +1,69 @@
+.slider {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;
+
+  &__wrapper {
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &--small {
+    grid-row: 7;
+    height: 48px;
+  }
+
+  &--big {
+    grid-row: 11;
+    height: 156px;
+    .slider__arrow {
+      top: 60px;
+    }
+  }
+
+  &__pills {
+    display: inline-block;
+    width: 138px;
+    height: 48px;
+    margin-right: 12px;
+    background-color: $styleGuideWhite;
+    h4 {
+      line-height: 48px;
+      text-align: center;
+      color: $styleGuideGrey-1;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: $styleGuideGrey-4;
+    border-radius: 100%;
+    top: 6px;
+    z-index: 2;
+    &--left {
+      left: -18px;
+      img {
+        position: absolute;
+        right: 4px;
+        top: 10px;
+        width: 16px;
+      }
+    }
+    &--right {
+      right: -18px;
+      img {
+        position: absolute;
+        left: 4px;
+        top:10px;
+        width: 16px;
+      }
+    }
+  }
+
+}

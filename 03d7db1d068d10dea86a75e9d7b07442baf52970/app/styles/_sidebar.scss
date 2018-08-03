@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: $styleGuideGrey-5;
+  display: block;
+  width: 375px;
+  height: 100vh;
+  padding-bottom: 160px;
+  overflow: scroll;
+  transition: all ease-out 0.15s;
+  //display: none;
+  position: fixed;
+  right: -375px;
+  z-index: 100;
+  top: 112px;
+  -webkit-overflow-scrolling: touch;
+
+  &--game {
+    top: 64px;
+  }
+
+  &--landingpage {
+    top: 0px;
+  }
+
+  &--has-sidebar {
+    //display: block;
+    right: 0px;
+  }
+
+  @media screen and (max-width: 719px) {
+    /* Sidebar takes over the whole screen */
+    top: 0px;
+    &--has-sidebar {
+      width: 100%;
+      
+    }
+  }
+  
+}

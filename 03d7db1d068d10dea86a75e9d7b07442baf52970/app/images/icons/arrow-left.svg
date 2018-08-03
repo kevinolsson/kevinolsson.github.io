@@ -1,0 +1,19 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0.377192077,15.7276726 C0.224842675,15.7285586 0.0870995605,15.6371837 0.0286779707,15.4964781 C-0.0297436192,15.3557726 0.00276959622,15.1937065 0.110942077,15.0864226 L7.34844208,7.85267258 L0.110942077,0.618922583 C-0.0164742215,0.470137479 -0.00790752412,0.248349769 0.130605869,0.109836376 C0.269119263,-0.0286770176 0.490906973,-0.037243715 0.639692077,0.0901725835 L8.13969208,7.59017258 C8.28508843,7.73643663 8.28508843,7.97265854 8.13969208,8.11892258 L0.639692077,15.6189226 C0.569844338,15.6882016 0.475569531,15.7272584 0.377192077,15.7276726 L0.377192077,15.7276726 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/UI/Chevron-Right-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Bounding-Box" x="0" y="0" width="24" height="24"></rect>
+        <g id="↳Colour" transform="translate(12.500000, 12.000000) rotate(180.000000) translate(-12.500000, -12.000000) translate(8.000000, 4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="↳🎨Colour" fill="#272B33" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Backgrounds/Style-Guide/grey-800" mask="url(#mask-2)" fill="#272B33">
+                <g transform="translate(-8.000000, -4.000000)" id="grey-800">
+                    <rect x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

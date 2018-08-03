@@ -1,0 +1,34 @@
+.bundle {
+  width: 304px;
+  height: 156px;
+  margin-right: 12px;
+  display: inline-block;
+  background-color: $styleGuideGrey-3;
+  border-radius: 3px;
+  position: relative;
+  text-align: center;
+
+  &__count {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    .circle {
+      display: block;
+      width: 32px;
+      line-height: 32px;
+      text-align: center;
+      background-color: rgba($styleGuideGrey-1, 0.25);
+      border-radius: 100%; 
+      margin: 0 auto;     
+      margin-bottom: 4px;
+    }
+  }
+
+  &__content {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+  }
+}

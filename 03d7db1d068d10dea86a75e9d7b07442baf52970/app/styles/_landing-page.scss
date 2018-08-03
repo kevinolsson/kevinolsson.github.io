@@ -1,0 +1,108 @@
+.landing-page {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  grid-template-rows: 1fr auto auto auto 1fr auto 2fr;
+  width: 100%;
+  max-width: 1256px;
+  padding: 0px 12px;
+  margin: 0 auto;
+  text-align: center;
+  &__wrapper {
+    background-color: $styleGuideGrey-3;
+    min-height: 80vh;
+    width: 100%;
+  }
+
+  &__logo {
+    svg {
+      max-width: 250px;
+      width: 50%;
+    }
+  }
+  &__header {
+    h1 {
+      font-size: 32px;
+      font-weight: 300;
+      padding: 0px 24px;
+      margin: 0 auto;
+      color: $styleGuideGrey-1;
+      @media screen and (min-width: 767px) { 
+        font-size: 56px;
+        max-width: 800px;
+      }
+    }
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    max-width: 360px;
+    width: 100%;
+    padding: 0px 24px;
+    margin: 0 auto;
+    margin-top: 32px;
+    h3 {
+      margin-top: 3px;
+      font-size: 14px;
+      font-weight: 300;
+      color: $styleGuideGrey-1;
+      white-space: nowrap;
+      @media screen and (min-width: 767px) { 
+        font-size: 18px;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__actions {
+    
+    padding: 12px;
+    
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: $styleGuideGrey-4;
+    .button {
+      margin: 0px;
+    }
+    .button--small {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      font-size: 15px;
+      font-weight: 300;
+      .mobile {
+        display: block;
+      }
+      .desktop {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 767px) { 
+      position: static;
+      width: calc(100% - 24px);
+      max-width: 351px;
+      margin: 0 auto;
+      background-color: transparent;
+      .button {
+        margin: 12px 0px;
+      }
+      .button--small {
+        position: static;
+        font-size: 12px;
+        .mobile {
+          display: none;
+        }
+        .desktop {
+          display: block;
+        }
+      }
+    }
+  }
+}
